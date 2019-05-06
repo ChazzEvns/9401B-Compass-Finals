@@ -12,17 +12,34 @@
                 <h1 class="sub-header">Register</h1>
             </div>
             <div class="forms">
-                <form>
+                <form action="insert.php" method="POST">
+                   
+                    <label for="id"><b>ID Number:</b></label>
+                    <input type="text" placeholder="Enter Id Number" name="id" required>
+
+                    <label for="first"><b>Firstname:</b></label>
+                    <input type="text" placeholder="Enter Firstname" name="first" required>
+                    
+                    <label for="last"><b>Lastname:</b></label>
+                    <input type="text" placeholder="Enter Lastname" name="last" required>
+                    
+                    <label for="user"><b>Usertype:</b></label>
+                    <select name="usertype" required>
+                      <option selected hidden value="">Select user type</option>
+                      <option value="Student">Student</option>
+                      <option value="Teacher">Teacher</option>
+                    </select>
+                    
                     <label for="email"><b>Email:</b></label>
                     <input type="text" placeholder="Enter Email" name="email" required>
-
+                   
                     <label for="psw"><b>Password:</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>
 
                     <label for="psw-repeat"><b>Repeat Password:</b></label>
                     <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
                     <div id="lower">
-                        <button class="button button1">Register</button>
+                        <button class="button button1" type="submit">Register</button>
                     </div><!--/ lower-->
                 </form>
             </div>

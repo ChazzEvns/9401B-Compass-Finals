@@ -11,15 +11,15 @@
                 <h1 class="lower-header">Classrooms</h1>
             </div>
             <div class="forms">
-                <form>
+                <form action="process.php" method="POST">
                     <label for="username">ID number:</label>
-                    <input type="text" id="username" name="username">
+                    <input type="text" id="username" name="user">
                     <label for="password">Password:</label>
-                    <input type="password" id="password" name="password">
+                    <input type="password" id="password" name="pass">
                     <div id="lower">
-                        <button class="button button1">Login</button>
+                        <button class="button button1" type="submit" id="login-btn">Login</button>
                         <a class="login-admin" href="#">Login as Admin</a>
-                        <a class="register" href="#">Register</a>
+                        <a class="register" href="./Register.html">Register</a>
                     </div><!--/ lower-->
                 </form>
             </div>
