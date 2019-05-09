@@ -33,11 +33,12 @@ USE `web_lab`;
 
 DROP TABLE IF EXISTS `reservation`;
 CREATE TABLE IF NOT EXISTS `reservation` (
-  `reservation_id` int(1) NOT NULL,
-  `first_name` varchar(20) NOT NULL,
-  `last_name` varchar(20) NOT NULL,
+  `reservation_id` int(50) NOT NULL AUTO_INCREMENT,
   `room_number` varchar(4) NOT NULL,
-  `time_res` varchar(4) NOT NULL
+  `time_res` varchar(11) NOT NULL,
+  `date_res` varchar(10) NOT NULL,
+  `status` varchar(10) NULL,
+  PRIMARY KEY (`reservation_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -63,11 +64,12 @@ CREATE TABLE IF NOT EXISTS `room` (
 
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
-  `id_number` varchar(10) NOT NULL,
-  `user_type` varchar(3) NOT NULL,
+  `id_number` int(10) NOT NULL,
+  `user_type` varchar(10) NOT NULL,
   `first_name` varchar(30) NOT NULL,
   `last_name` varchar(20) NOT NULL,
   `password` varchar(8) NOT NULL,
+  `email` varchar(50) NOT NULL,
   PRIMARY KEY (`id_number`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 COMMIT;
