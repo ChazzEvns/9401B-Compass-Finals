@@ -6,38 +6,39 @@
     </head>
     <body>
         <div class="divisorHead">
-        
-     <a style="text-decoration:none" class="headheadbar" href="index.html"> Home </a> &nbsp;
-     <a style="text-decoration:none" class="headheadbar" href="MyLife/mylife.html"> My Reservations </a> &nbsp;
-            
-</div>
+             <a style="text-decoration:none" class="headheadbar" href="#"> Home </a> &nbsp;
+             <a style="text-decoration:none" class="headheadbar" href="#"> My Reservations </a> &nbsp;  
+        </div>
         <div class="loginForm">
             <div class="login-header">
                 <h1 class="upper-header">SAMCIS</h1>
                 <h1 class="lower-header">Classrooms</h1>
                 <h1 class="sub-header">Room Reservation</h1>
             </div>
-            <div class="form">
-                <form action="room-reservation.php" method="POST">
-                   <div id="room">
-                    <label  for="room"><b>Room number:</b></label>
+            <div class="forms">
+                <form action="php/room-reservation.php" method="POST">
+                   
+                    <label for="room"><b>Room number:</b></label>
                     <select name="room" required>
                       <option selected hidden value="">Select Classroom</option>
                       <option value="D301">D301</option>
                       <option value="D302">D302</option>
                     </select>
-                    </div>
-                    <div id="time">
+
                     <label for="time"><b>Time for reservation:</b></label>
                     <input type="text" placeholder="08:00-09:00" name="time" required>
-                    </div>
-                    <div id="time">
+                    
                     <label for="date"><b>Date for reservation:</b></label>
                     <input type="text" placeholder="MM/DD/YY" name="date" required>
+                    
+                    <div id="formone">
+                        <h4 id="h2pwe"><b>Purpose for reservation:</b></h4>
+                        <textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Specify reason for the reservation..."></textarea>
                     </div>
-                    <div id="lower">
-                        <button class="button button1" type="submit">Register</button>
-                    </div><!--/ lower-->
+                    
+                    <div class="button">
+                              <button id="button1">Submit</button>
+                    </div>  
                 </form>
             </div>
         </div>

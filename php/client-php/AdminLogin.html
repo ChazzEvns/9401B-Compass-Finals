@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="css/Styles.css" />
+    </head>
+    <body>
+        <div class="loginForm">
+            <div class="login-header">
+                <h1 class="upper-header">SAMCIS</h1>
+                <h1 class="lower-header">Classrooms</h1>
+                <h1 class="sub-header">- Admin -</h1>
+            </div>
+            <div class="forms">
+                <form action="php/admin.php" method="POST">
+                    <label for="username">ID number:</label>
+                    <input type="text" id="username" name="user">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="pass">
+                    <div type="submit" class="button" name="login">
+                        <button id="button1">Login</button>
+                        </div> 
+                    <div id="lower">
+                        <a class="login-admin" href="./LoginSignUp.html">Login as Client</a>
+                    </div><!--/ lower-->
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
