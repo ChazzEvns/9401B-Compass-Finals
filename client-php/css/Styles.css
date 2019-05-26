@@ -1,0 +1,152 @@
+html, body {   
+    margin: 0;
+    width: 100%;   
+    height: 100%;   
+    font-family: "Helvetica Neue", Helvetica, sans-serif;   
+    color: #444;   
+    -webkit-font-smoothing: antialiased;    background: #f0f0f0;
+}
+
+.loginForm {
+    position: fixed;
+    width: 340px;
+    height: 280px;
+    top: 40%;
+    left: 50%;
+    margin-top: -140px;
+    margin-left: -170px;
+}
+
+form {
+    
+    margin: 0 auto;
+    margin-top: 20px;
+    
+}
+
+label {
+    color: #555;
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.login-admin {
+    color: blue;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+.register {
+    color: blue;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+#lower {
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 450px;
+}
+
+.upper-header {
+    position: relative;
+    color: #ffd623;
+    font-size: 70px;
+    font-family: monospace;
+    margin: 0;
+    right: 100px;
+}
+
+.lower-header {
+    color: black;
+    font-size: 70px;
+    font-family: monospace;
+    margin: 0;
+    padding-left: 105px;
+}
+.button {
+    background-color: #ffd623; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 6px;
+    cursor: pointer;
+    margin-left: 30%;
+
+    
+}
+#button1 {
+    background-color: #ffd623;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    
+}
+.divisorHead{
+ 	text-decoration: none;
+  	background-color: gray;
+  	padding: 13px 1px;
+  	text-align: left;
+  	font-family: "Lucida Console";
+	text-decoration: none;
+    
+}
+.headheadbar{
+        margin-left: 10px;
+        color: white;
+}
+
+
+#divisorPP{
+	color: black;
+	font-family: "Lucida Console";
+	margin-top: 20px;
+	font-size: 15px;
+	margin-left: 20px;
+    text-align: center;
+}
+#divisorPP{
+	border: solid black 5px;
+	background-color:white;
+	width: 300px;
+    height: 500px;
+    float:left;
+}
+#he{
+    text-align: left;
+    float: left;
+    margin-left: 25px;
+}
+#she{
+    text-align: right;
+    float: right;
+    margin-right: 25px;
+}
+#heading{
+    text-align: center;
+    color:gold;
+}
+#formone{
+    text-align: center;
+    
+}
+#formtwo{
+    text-align: center;
+   
+}
+#h2pwe{
+    float: inherit;
+}
+#room{
+    text-align: center;
+}
+#time{
+    text-align: center;
+}
+.sub-header{
+    text-align: center;
+}
